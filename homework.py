@@ -53,7 +53,7 @@ def get_homework_statuses(current_timestamp):
 
     try:
         homework_statuses = requests.get(
-            'https://praktikum.yandex.ru/api/user_api/homework_statuses/',
+            'https://practicum.yandex.ru/api/user_api/homework_statuses/',
             params={'from_date': current_timestamp},
             headers={'Authorization': f'OAuth {PRAKTIKUM_TOKEN}'}
         )
